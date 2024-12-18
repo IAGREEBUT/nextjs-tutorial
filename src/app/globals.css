@@ -1,0 +1,76 @@
+
+.button {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border:none;
+}
+.button-size-large {
+    height: 48px;
+    gap: 2px;
+}
+
+.button-size-medium {
+    height: 40px;
+    gap: 4px;
+}
+
+.button-size-small {
+    height: 36px;
+    padding: 12px 10px;
+    gap: 4px;
+}
+
+.button-size-xsmall {
+    height: 28px;
+    gap: 4px;
+}
+
+
+.button-varient-primary {
+    background: var(--Semantic-Button-Primary, #19191A);
+}
+
+.button-varient-Secondary {
+    background: var(--Semantic-Button-Secondary, #F7F9FA);
+}
+
+.button-varient-Tertiary {
+    border: 1px solid var(--Semantic-Button-Tertiary-line, #B5B9BC);
+    background: var(--Semantic-Button-white, #FFF);
+}
+
+.button-varient-danger {
+    background: var(--Interaction-error, #E52017);
+}
+
+.button-varient-Stock-blue {
+    background: var(--Semantic-Button-stock-blue, #4789E5);
+}
+
+.button-varient-Stock-red {
+    background: var(--Semantic-Button-stock-red, #E05C60);
+}
+
+.button-varient-Stock-cancel {
+    background: var(--Semantic-Button-stock-cancle, #983FF1);
+}
+
+.button-varient-Stock-correction {
+    background: var(--Semantic-Button-stock-correction, #54803F);
+}
+
+/* state disabled이랑 겹치는것 같은데 왜 따로 있는지 */
+.button-varient-stock-disabled {
+    background: var(--Semantic-Button-disabled, #DFE2E5);   
+}
+
+/* button state disabled */
+.button-state-disabled {
+    background: var(--Semantic-Button-disabled, #DFE2E5);   
+}
+
+
+/* 버튼 텍스트 */
