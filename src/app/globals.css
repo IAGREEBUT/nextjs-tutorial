@@ -33,25 +33,59 @@
     background: var(--Semantic-Button-Primary, #19191A);
 }
 
+.button-varient-primary:active {
+    background: var(--Semantic-Button-primary-pressed, #959799);
+}
+
+
 .button-varient-Secondary {
     background: var(--Semantic-Button-Secondary, #F7F9FA);
 }
 
+.button-varient-Secondary:active {
+    background: var(--Semantic-Button-primary-pressed, #959799);
+}
+
+
 .button-varient-Tertiary {
     border: 1px solid var(--Semantic-Button-Tertiary-line, #B5B9BC);
     background: var(--Semantic-Button-white, #FFF);
+}
+.button-varient-Tertiary:active {
+    border: 1px solid var(--Semantic-Button-Tertiary-pressed-line, #333131);
+    background: var(--Semantic-Button-Tertiary-pressed, #F7F9FA);
 }
 
 .button-varient-danger {
     background: var(--Interaction-error, #E52017);
 }
 
+.button-varient-danger:active {
+    background: #C11008;
+}
+
 .button-varient-Stock-blue {
     background: var(--Semantic-Button-stock-blue, #4789E5);
 }
 
+.button-varient-Stock-blue:active {
+    background: var(--Semantic-Button-stock-blue-pressed, #3F7ACC);
+}
+
 .button-varient-Stock-red {
     background: var(--Semantic-Button-stock-red, #E05C60);
+}
+
+.button-varient-Stock-red:active  {
+    background: var(--Semantic-Button-stock-red-pressed, #C75255);
+}
+
+.button-varient-Stock-cancel {
+    background: var(--Semantic-Button-stock-cancle, #983FF1);
+}
+
+.button-varient-Stock-cancel:active  {
+    background: var(--Semantic-Button-stock-cancel-pressed, #642E99);
 }
 
 .button-varient-Stock-cancel {
@@ -60,6 +94,10 @@
 
 .button-varient-Stock-correction {
     background: var(--Semantic-Button-stock-correction, #54803F);
+}
+
+.button-varient-Stock-correction:active  {
+    background: var(--Semantic-Button-stock-correction-pressed, #436632);
 }
 
 /* state disabled이랑 겹치는것 같은데 왜 따로 있는지 */

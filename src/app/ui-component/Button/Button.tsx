@@ -55,6 +55,12 @@ export interface ButtonElementSharedProps {
      * React children
      */
     children: ReactNode;
+    /**
+     * disabled 여부
+     * 
+     * @default false
+     */
+    disabled? : boolean;
 }
 
 
@@ -81,7 +87,7 @@ function getImgSize(size:ButtonPropsSize){
 export const Button = ({
     type = "primary",
     size = "large",
-    state = "default",
+    disabled = false,
     ...props
 }:ButtonElementProps) => {
     const classNames = [
@@ -91,15 +97,14 @@ export const Button = ({
 
     const contents: ReactNode[] = []
 
-    if(type === 'Stock' && props.stock){
-        console.log("?stock")
-        classNames.push(`button-varient-${type}-${props.stock}`)
-    } else{
-        classNames.push(`button-varient-${type}`)
-    }
-
-    if(state === 'disabled'){
+    if(disabled){
         classNames.push('button-state-disabled')
+    }else{
+        if(type === 'Stock' && props.stock){
+            classNames.push(`button-varient-${type}-${props.stock}`)
+        } else{
+            classNames.push(`button-varient-${type}`)
+        }
     }
 
     //나중에 로직좀 수정할 것.. 일단 되는지 부터 보고

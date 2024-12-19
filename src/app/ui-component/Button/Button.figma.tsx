@@ -35,13 +35,12 @@ figma.connect(
         cancel: "cancel",
         correction: "correction",
       }),
-      state: figma.enum("State", {
-        Default: "default",
-        pressed: "pressed",
-        disabled: "disabled",
+      disabled: figma.enum("State", { //figma State 프로퍼티를 리액트에서는 disabled 태그로 표현하도록 수정 
+        disabled: true,
       }),
       leftIcon: figma.boolean("Left-icon"),
       rightIcon: figma.boolean("Right-icon"),
+      // disabled: figma.boolean("disabled") -> 개발자가 직접추가는 안되는듯..?어ㅋ
       // No matching props could be found for these Figma properties:
       // "righticon": figma.boolean('Right-icon'),
       // "lefticon": figma.boolean('Left-icon')
@@ -51,7 +50,7 @@ figma.connect(
         type={props.type}
         size={props.size}
         stock={props.stock}
-        state={props.state}
+        disabled={props.disabled}
         leftIcon={props.leftIcon}
         rightIcon={props.rightIcon}
       >
